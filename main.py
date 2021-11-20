@@ -25,7 +25,7 @@ class Main(QMainWindow):
         painter = QPainter(self.label.pixmap())
         pen = QPen()
         pen.setWidth(3)
-        pen.setColor(QColor(*[randint(0, 255) for i in range(3)]))
+        pen.setColor(QColor(255, 255, 0))
         painter.setPen(pen)
         painter.drawEllipse(x, y, w, h)
         painter.end()
